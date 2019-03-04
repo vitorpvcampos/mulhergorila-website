@@ -6,7 +6,6 @@ services:
 env:
   global:
     - DJANGO_SETTINGS_MODULE="website.settings"
-    - PIPENV_IGNORE_VIRTUALENVS=1
 addons:
   postgresql: '9.5'
 # command to install dependencies
