@@ -10,6 +10,8 @@ For the full list of settings and their values, see
 https://docs.djangoproject.com/en/2.1/ref/settings/
 """
 
+import sentry_sdk
+from sentry_sdk.integrations.django import DjangoIntegration
 import os
 
 import django_heroku
@@ -139,3 +141,6 @@ django_heroku.settings(locals())
 if 'DYNO' in os.environ:
     SECURE_SSL_REDIRECT = True
     SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
+
+# Sentry
+sentry_sdk.init(dsn=config('SENTRY_DSN'), integrations=[DjangoIntegration()])
