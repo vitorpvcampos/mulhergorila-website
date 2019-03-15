@@ -9,20 +9,23 @@
 [![Django 2.1.7](https://img.shields.io/badge/django-2.1.7-blue.svg)](https://www.djangoproject.com/download/)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/tiagocordeiro/mulhergorila-website/blob/master/LICENSE)
 
+
 ### Como rodar o projeto?
 
 * Clone esse repositório.
-* Navegue até a pasta do projeto.
-* Instale as dependências com Pipenv.
-* Crie um arquivo .env copiando de contrib/env-sample.
+* Crie um virtualenv com Python 3.
+* Ative o virtualenv.
+* Instale as dependências.
 * Rode as migrações.
 
 ```
 git clone https://github.com/tiagocordeiro/mulhergorila-website.git
 cd mulhergorila-website
-pipenv sync --dev
-pipenv shell
-cp contrib/env-sample .env
+python3 -m venv venv
+source venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+python contrib/env_gen.py
 python manage.py migrate
 ```
 
@@ -42,5 +45,5 @@ para relatório de cobertura de testes.
 #### Code style and PEP8 Tests
 ```
 pycodestyle .
-pyflakes .
+flake8 .
 ```
