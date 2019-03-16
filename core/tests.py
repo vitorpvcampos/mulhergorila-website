@@ -1,6 +1,6 @@
 from django.test import RequestFactory, TestCase, Client
 
-from .views import index
+from .views import home
 
 
 class HomeViewTests(TestCase):
@@ -12,5 +12,5 @@ class HomeViewTests(TestCase):
     def test_home_view_status_code_is_ok(self):
         request = self.factory.get('/')
 
-        response = index(request)
+        response = home(request)
         self.assertEqual(response.status_code, 200)
