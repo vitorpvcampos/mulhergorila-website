@@ -25,6 +25,7 @@ admin.site.site_header = 'Mulher Gorila'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('core.urls')),
+    path('portfolio/', include('portfolio.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
 if settings.DEBUG:
