@@ -148,7 +148,8 @@ if 'DYNO' in os.environ:
 CLOUDINARY_STORAGE = {
     'CLOUD_NAME': config('CLOUDINARY_NAME'),
     'API_KEY': config('CLOUDINARY_API_KEY'),
-    'API_SECRET': config('CLOUDINARY_API_SECRET')
+    'API_SECRET': config('CLOUDINARY_API_SECRET'),
+    'STATICFILES_MANIFEST_ROOT': os.path.join(BASE_DIR, 'static-manifest-directory')
 }
 DEFAULT_FILE_STORAGE = 'cloudinary_storage.storage.RawMediaCloudinaryStorage'
 STATICFILES_STORAGE = 'cloudinary_storage.storage.StaticHashedCloudinaryStorage'
