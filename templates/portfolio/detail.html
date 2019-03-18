@@ -61,38 +61,34 @@
             <div class="row mb-3">
               <div class="col">
                 <span class="top-sub-title text-color-primary">WEBSITE CREATION</span>
-                <h1 class="font-weight-bold mb-3">EZY Website</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam id
-                  varius. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim. Nullam
-                  id varius.</p>
+                <h1 class="font-weight-bold mb-3 text-color-light-2">{{ project.title }}</h1>
+                <p>{{ project.description|safe }}</p>
               </div>
             </div>
             <div class="row">
               <div class="col-md-6 mb-4">
                 <span class="top-sub-title">DATE</span>
-                <hr class="my-2">
-                <span class="font-primary text-color-dark font-weight-bold text-2">March, 2018</span>
+                <hr class="my-2" style="border-top: 1px solid rgba(179, 179, 179, 0.4);">
+                <span class="font-primary text-color-light-2 font-weight-bold text-2">{{ project.created|date:"M, Y" }}</span>
               </div>
               <div class="col-md-6 mb-4">
                 <span class="top-sub-title">SERVICES</span>
-                <hr class="my-2">
+                <hr class="my-2" style="border-top: 1px solid rgba(179, 179, 179, 0.4);">
                 <ul class="list-inline mb-0">
-                  <li class="list-inline-item"><a href="#" class="badge badge-dark badge-sm badge-pill px-3 py-2 mb-2">DESIGN</a>
-                  </li>
-                  <li class="list-inline-item"><a href="#" class="badge badge-dark badge-sm badge-pill px-3 py-2 mb-2">BRAND</a>
+                  <li class="list-inline-item"><a href="#" class="badge badge-dark badge-sm badge-pill px-3 py-2 mb-2">{{ project.category|upper }}</a>
                   </li>
                 </ul>
               </div>
               <div class="col-md-6 mb-4 mb-md-0">
-                <span class="top-sub-title">CLIENT</span>
-                <hr class="my-2">
-                <span class="font-primary text-color-dark font-weight-bold text-2">Okler Themes</span>
+                <span class="top-sub-title">CLIENTE</span>
+                <hr class="my-2" style="border-top: 1px solid rgba(179, 179, 179, 0.4);">
+                <span class="font-primary text-color-light-2 font-weight-bold text-2">{{ project.client }}</span>
               </div>
               <div class="col-md-6">
                 <span class="top-sub-title">LINK</span>
-                <hr class="my-2">
-                <a href="http://www.okler.net/"
-                   class="link font-primary text-color-primary font-weight-semibold text-2">http://www.okler.net</a>
+                <hr class="my-2" style="border-top: 1px solid rgba(179, 179, 179, 0.4);">
+                <a href="#"
+                   class="link font-primary text-color-primary font-weight-semibold text-2">{{ project.link }}</a>
               </div>
             </div>
           </div>
