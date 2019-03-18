@@ -6,6 +6,8 @@ from core.models import TimeStampedModel, Active
 
 class Project(TimeStampedModel, Active):
     title = models.CharField(max_length=255)
+    client = models.CharField(max_length=30, blank=True, null=True)
+    link = models.URLField(blank=True, null=True)
     slug = models.SlugField(max_length=255, unique=True, verbose_name="slug",
                             help_text="Preenchido automaticamente, não editar.",
                             null=True,
@@ -17,7 +19,6 @@ class Project(TimeStampedModel, Active):
         null=True,
         blank=True,
     )
-    # image_galery = models.ManyToManyField(ProjectImages, 'imagens')
     category = models.ForeignKey(
         'Category',
         on_delete=models.SET_NULL,

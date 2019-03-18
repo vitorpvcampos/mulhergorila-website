@@ -82,13 +82,18 @@
               <div class="col-md-6 mb-4 mb-md-0">
                 <span class="top-sub-title">CLIENTE</span>
                 <hr class="my-2" style="border-top: 1px solid rgba(179, 179, 179, 0.4);">
-                <span class="font-primary text-color-light-2 font-weight-bold text-2">{{ project.client }}</span>
+                <span class="font-primary text-color-light-2 font-weight-bold text-2">
+                  {% if project.client %}
+                    {{ project.client }}
+                  {% endif %}
+                </span>
               </div>
               <div class="col-md-6">
                 <span class="top-sub-title">LINK</span>
                 <hr class="my-2" style="border-top: 1px solid rgba(179, 179, 179, 0.4);">
-                <a href="#"
-                   class="link font-primary text-color-primary font-weight-semibold text-2">{{ project.link }}</a>
+                {% if project.link %}
+                  <a href="{{ project.link }}" class="link font-primary text-color-primary font-weight-semibold text-2">{{ project.link }}</a>
+                {% endif %}
               </div>
             </div>
           </div>
