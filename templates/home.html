@@ -6,7 +6,7 @@
         <div id="revolutionSlider" class="slider rev_slider" data-version="5.4.7" data-plugin-revolution-slider data-plugin-options="{'delay': 9000, 'gridwidth': [1140,960,720,540], 'gridheight': [550,550,550,550], 'responsiveLevels': [4096,1200,992,576], 'parallax': { 'type': 'mouse', 'origo': 'slidercenter', 'speed': 2000, 'levels': [2,3,4,5,6,7,12,16,10,50], 'disable_onmobile': 'on' }, 'navigation' : {'arrows': { 'enable': false, 'hide_under': 767, 'style': 'slider-arrows-style-1' }, 'bullets': {'enable': false, 'style': 'bullets-style-1', 'h_align': 'center', 'v_align': 'bottom', 'space': 7, 'v_offset': 25, 'h_offset': 0}}}">
             <ul>
                 <li class="slide-overlay slide-overlay-level-8" data-transition="fade">
-                    <img src="{% static "img/slides/multi-purpose/slide-8-1.jpg" %}"
+                    <img src="{% static "img/backgrounds/mulhergorila-bg.webp" %}"
                          alt=""
                          data-bgposition="center center"
                          data-bgfit="cover"
@@ -23,7 +23,7 @@
                         data-x="center"
                         data-y="center" data-voffset="['-55','-55','-55','0']"
                         data-start="1000"
-                        data-fontsize="['65','65','65','55']"
+                        data-fontsize="['65','65','65','34']"
                         data-transform_in="y:[-50%];opacity:0;s:500;"
                         data-transform_out="y:[-50%];opacity:0;s:500;">Somos uma Agência Criativa</h1>
 
@@ -31,7 +31,7 @@
                          data-x="center"
                          data-y="center" data-voffset="['10','10','10','70']"
                          data-start="1300"
-                         data-fontsize="['37','37','37','29']"
+                         data-fontsize="['37','37','37','22']"
                          data-transform_in="y:[-50%];opacity:0;s:500;"
                          data-transform_out="y:[-50%];opacity:0;s:500;">Desenvolvimento Web e Marketing Digital
                     </div>
@@ -60,7 +60,6 @@
                             <h3 class="font-weight-bold d-flex align-items-center text-color-light text-2 pl-1 mb-3">
                                 <i class="lnr lnr-code text-color-primary mr-3"></i>
                             </h3>
-{#                            <img width="42" src="{% static "vendor/linear-icons/code.svg" %}" alt="" data-icon data-plugin-options="{'color': '#fefd42', 'animated': true, 'delay': 600}"/>#}
                         </div>
                         <div class="icon-box-info">
                             <span class="top-sub-title">NÓS DESENVOLVEMOS</span>
@@ -76,7 +75,6 @@
                             <h3 class="font-weight-bold d-flex align-items-center text-color-light text-2 pl-1 mb-3">
                                 <i class="lnr lnr-tablet text-color-primary mr-3"></i>
                             </h3>
-{#                            <img width="42" src="{% static "vendor/linear-icons/screen.svg" %}" alt="" data-icon data-plugin-options="{'color': '#fefd42', 'animated': true, 'delay': 900}"/>#}
                         </div>
                         <div class="icon-box-info">
                             <span class="top-sub-title">NÓS CRIAMOS</span>
@@ -92,7 +90,6 @@
                             <h3 class="font-weight-bold d-flex align-items-center text-color-light text-2 pl-1 mb-3">
                                 <i class="lnr lnr-magic-wand text-color-primary mr-3"></i>
                             </h3>
-{#                            <img width="42" src="{% static "vendor/linear-icons/select.svg" %}" alt="" data-icon data-plugin-options="{'color': '#fefd42', 'animated': true, 'delay': 1200}"/>#}
                         </div>
                         <div class="icon-box-info">
                             <span class="top-sub-title">NÓS FAZEMOS</span>
@@ -122,19 +119,21 @@
                         </h2>
                     </div>
                     <p class="lead mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-                        Nullam id varius nunc.</p>
+                        Projetos especiais em TI e design digital.
+                    </p>
 
                     <p class="mb-3 appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa enim.
-                        Nullam id varius nunc. Vivamus bibendum magna ex, et faucibus lacus venenatis eget.
-                        Suspendisse potenti. Curabitur euismod facilisis neque, eu malesuada diam finibus non.
-                        Nullam nec vehicula leo. Morbi porta ante eu feugiat mollis.</p>
+                        A Mulher Gorila é lugar de gente inovadora que possui em sua equipe indivíduos criativos,
+                        versados em tecnologia, que trazem novas ideias todos os dias. Nossa tarefa é aplicar inovações
+                        digitais cedo o suficiente, com frequência suficiente e em escala suficiente para mudar
+                        percepções e comportamento do cliente.
+                    </p>
 
                     <div class="d-block d-sm-inline-block text-center appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="1000">
-                        <a href="about-us-2.html" class="btn btn-outline btn-rounded btn-primary btn-v-3 btn-h-4 font-weight-bold">MORE
-                            ABOUT US</a>
-                        <span class="d-block mt-3">or<a class="text-underline ml-2" href="contact-us-5.html">CONTACT US</a></span>
+                        <a href="{% url 'quem-somos' %}" class="btn btn-outline btn-rounded btn-primary btn-v-3 btn-h-4 font-weight-bold">
+                            SAIBA MAIS
+                        </a>
+                        <span class="d-block mt-3">ou<a class="text-underline ml-2" href="#">FALE CONOSCO</a></span>
                     </div>
                 </div>
                 <div class="col-10 col-md-5 mx-auto ml-md-auto appear-animation" data-appear-animation="fadeIn">
@@ -200,7 +199,7 @@
                             </g>
                         </svg>
                         <div class="particles-rect bg-primary d-none d-md-block" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 4, 'transition': true}"></div>
-                        <img src="{% static "img/particles-featured-image.jpg" %}" class="img-fluid" alt="" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 4, 'horizontal': true, 'transition': true}"/>
+                        <img src="{% static "img/mulhergorila.png" %}" class="img-fluid" alt="" data-plugin-float-element data-plugin-options="{'startPos': 'top', 'speed': 4, 'horizontal': true, 'transition': true}"/>
                     </div>
                 </div>
             </div>
@@ -211,8 +210,8 @@
         <div class="container">
             <div class="row text-center">
                 <div class="col">
-                    <span class="top-sub-title text-color-primary">LOREM IPSUM DOLOR SIT</span>
-                    <h2 class="text-color-light font-weight-bold">Work Process</h2>
+                    <span class="top-sub-title text-color-primary">Como Funciona Nosso</span>
+                    <h2 class="text-color-light font-weight-bold">Processo de Trabalho</h2>
                 </div>
             </div>
             <div class="row">
@@ -224,22 +223,25 @@
                             <div class="dots-color-dark"></div>
                         </div>
                         <div class="item appear-animation" data-appear-animation="stepsFadeInUp" data-plugin-image-background data-plugin-options="{'imageUrl': '{% static "img/steps-1.jpg" %}'}">
-                            <h3 class="item-title"><span>1</span>STRATEGY</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitasellus blandit massa
-                                enim.</p>
-                            <a class="learn-more" href="#">Learn More <i class="fas fa-angle-right"></i></a>
+                            <h3 class="item-title"><span>1</span>ESTRATÉGIA</h3>
+                            <p>
+                                Nesta etapa, analisamos a melhor estratégia para o seu negócio ou necessidade.
+                            </p>
+                            <a class="learn-more" href="#">Saiba Mais <i class="fas fa-angle-right"></i></a>
                         </div>
                         <div class="item appear-animation" data-appear-animation="stepsFadeInUp" data-appear-animation-delay="300" data-plugin-image-background data-plugin-options="{'imageUrl': '{% static "img/steps-2.jpg" %}'}">
-                            <h3 class="item-title"><span>2</span>PLANNING</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitasellus blandit massa
-                                enim.</p>
-                            <a class="learn-more" href="#">Learn More <i class="fas fa-angle-right"></i></a>
+                            <h3 class="item-title"><span>2</span>PLANEJAMENTO</h3>
+                            <p>
+                                Com a estratégia definida, vamos ao planejamento do projeto.
+                            </p>
+                            <a class="learn-more" href="#">Saiba Mais <i class="fas fa-angle-right"></i></a>
                         </div>
                         <div class="item appear-animation" data-appear-animation="stepsFadeInUp" data-appear-animation-delay="600" data-plugin-image-background data-plugin-options="{'imageUrl': '{% static "img/steps-3.jpg" %}'}">
-                            <h3 class="item-title"><span>3</span>BUILD</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elitasellus blandit massa
-                                enim.</p>
-                            <a class="learn-more" href="#">Learn More <i class="fas fa-angle-right"></i></a>
+                            <h3 class="item-title"><span>3</span>PRODUÇÃO</h3>
+                            <p>
+                                Hora de colocar toda a estratágia e planejamento em produção.
+                            </p>
+                            <a class="learn-more" href="#">Saiba Mais <i class="fas fa-angle-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -251,19 +253,19 @@
             <div class="row text-center">
                 <div class="col">
                     <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-duration="700ms">
-                        <span class="top-sub-title text-color-primary">LOREM IPSUM DOLOR SIT</span>
-                        <h2 class="text-color-light font-weight-bold">Work Selection</h2>
+                        <span class="top-sub-title text-color-primary">CONHEÇA ALGUNS TRABALHOS</span>
+                        <h2 class="text-color-light font-weight-bold">Portfolio</h2>
                     </div>
                     <p class="lead appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus blandit massa<br> enim.
-                        Nullam id varius nunc id varius nunc.</p>
+                        Conheça alguns cases de sucesso e projetos desenvolvidos pela Mulher Gorila
+                    </p>
                 </div>
             </div>
             <div class="row align-items-center mb-4">
                 <div class="col-md-8 col-lg-9 appear-animation" data-appear-animation="fadeInLeftShorter">
                     <ul id="portfolioLoadMoreFilter" class="nav sort-source justify-content-center justify-content-md-start mb-4 mb-md-0" data-sort-id="portfolio" data-option-key="filter" data-plugin-options="{'layoutMode': 'fitRows', 'filter': '*'}">
                         <li class="nav-item" data-option-value="*">
-                          <a class="nav-link active" href="#">VER TUDO</a>
+                            <a class="nav-link active" href="#">VER TUDO</a>
                         </li>
 
                         <li class="nav-item" data-option-value=".brands">
@@ -275,17 +277,17 @@
                         </li>
 
                         <li class="nav-item" data-option-value=".web">
-                          <a class="nav-link text-uppercase" href="#">web</a>
+                            <a class="nav-link text-uppercase" href="#">web</a>
                         </li>
 
                         <li class="nav-item" data-option-value=".ads">
-                          <a class="nav-link text-uppercase" href="#">ads</a>
+                            <a class="nav-link text-uppercase" href="#">ads</a>
                         </li>
                     </ul>
                 </div>
                 <div class="col-md-4 col-lg-3 d-flex justify-content-center justify-content-md-end appear-animation" data-appear-animation="fadeInRightShorter">
                     <a href="{% url 'portfolio' %}" class="btn btn-outline btn-rounded btn-4 btn-primary font-weight-bold">
-                      VER MAIS PROJETOS
+                        VER MAIS PROJETOS
                     </a>
                 </div>
             </div>
@@ -294,9 +296,9 @@
                     <div class="sort-destination-loader sort-destination-loader-showing mb-4">
                         <div id="portfolioLoadMoreWrapper" class="portfolio-list sort-destination" data-sort-id="portfolio" data-ajax-url="#" data-total-pages="3">
                             {% for project in projects_home %}
-                            <div class="col-md-6 col-lg-4 p-0 isotope-item mb-3 {{ project.category.name.lower }}">
-                                <div class="portfolio-item hover-effect-3d text-center appear-animation" data-appear-animation="fadeInUpShorter" data-plugin-options="{'accY' : -50}">
-                                    <a href="{% url 'portfolio_detail' slug=project.slug %}">
+                                <div class="col-md-6 col-lg-4 p-0 isotope-item mb-3 {{ project.category.name.lower }}">
+                                    <div class="portfolio-item hover-effect-3d text-center appear-animation" data-appear-animation="fadeInUpShorter" data-plugin-options="{'accY' : -50}">
+                                        <a href="{% url 'portfolio_detail' slug=project.slug %}">
                                         <span class="image-frame image-frame-style-1 image-frame-effect-1 mb-3">
                                             <span class="image-frame-wrapper">
 {#                                                <img src="{% static "img/projects/generic/project-1.jpg" %}" class="img-fluid" alt="">#}
@@ -309,9 +311,9 @@
                                                 </span>
                                             </span>
                                         </span>
-                                    </a>
+                                        </a>
+                                    </div>
                                 </div>
-                            </div>
                             {% endfor %}
                         </div>
                     </div>
@@ -320,32 +322,32 @@
             </div>
         </div>
     </section>
-    <div class="parallax section section-height-3 section-text-light overlay overlay-color-dark overlay-show overlay-op-8" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="{% static "img/parallax/parallax-4.jpg" %}">
+    <div class="parallax section section-height-3 section-text-light overlay overlay-color-dark overlay-show overlay-op-8" data-plugin-parallax data-plugin-options="{'speed': 1.5}" data-image-src="{% static "img/backgrounds/mulhergorila-bg2.webp" %}">
         <div class="container">
             <div class="counters counters-light">
                 <div class="row">
                     <div class="col-sm-6 col-lg-3">
                         <div class="counter">
-                            <strong data-to="18000" data-append="+">0</strong>
-                            <label>Happy Clients</label>
+                            <strong data-to="100" data-append="+">0</strong>
+                            <label>Clientes Satisfeitos</label>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="counter">
-                            <strong data-to="16">0</strong>
-                            <label>Pre-made Demos</label>
+                            <strong data-to="300" data-append="+">0</strong>
+                            <label>Projetos Concluídos</label>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="counter">
-                            <strong data-to="3500" data-append="+">0</strong>
-                            <label>Answered Tickets</label>
+                            <strong data-to="200" data-append="+">0</strong>
+                            <label>Sites Entregues</label>
                         </div>
                     </div>
                     <div class="col-sm-6 col-lg-3">
                         <div class="counter">
-                            <strong data-to="3000" data-append="+">0</strong>
-                            <label>Development Hours</label>
+                            <strong data-to="15000" data-append="+">0</strong>
+                            <label>Horas de Desenvolvimento</label>
                         </div>
                     </div>
                 </div>
@@ -358,10 +360,10 @@
                 <div class="col-9 col-md-12 mx-auto double-carousel double-carousel-style-1" data-plugin-double-carousel data-plugin-options="{'responsive': { '0': {'items': 1}, '479': {'items': 1}, '768': {'items': 1, 'dotsEach': 3}, '979': {'items': 2}, '1199': {'items': 3}}}">
                     <div class="nav">
                         <div class="title-left">
-                            <span class="text-color-light">TESTIMONIALS <span>&</span></span>
+                            <span class="text-color-light">DEPOIMENTOS <span>&</span></span>
                         </div>
                         <div class="title-right">
-                            <span class="text-color-light">PARTNERS</span>
+                            <span class="text-color-light">PARCEIROS</span>
                         </div>
                         <div class="arrows">
                             <div class="arrow-left">
@@ -537,10 +539,11 @@
                 <div class="col">
                     <div class="row text-center">
                         <div class="col">
-                            <span class="top-sub-title text-color-primary">LOREM IPSUM DOLOR SIT</span>
-                            <h2 class="text-color-light font-weight-bold">Amazing Features</h2>
-                            <p class="lead mb-5 pb-xlg">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                Phasellus blandit<br> massa enim. Nullam id varius nunc id varius nunc.</p>
+                            <span class="top-sub-title text-color-primary">PORQUE ESCOLHER A MULHER GORILA</span>
+                            <h2 class="text-color-light font-weight-bold">Focada e criativa</h2>
+                            <p class="lead mb-5 pb-xlg">
+                                A equipe da Mulher Gorila está preparada para qualquer desafio.
+                            </p>
                         </div>
                     </div>
                     <div class="row align-items-baseline">
