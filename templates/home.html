@@ -301,8 +301,11 @@
                                         <a href="{% url 'portfolio_detail' slug=project.slug %}">
                                         <span class="image-frame image-frame-style-1 image-frame-effect-1 mb-3">
                                             <span class="image-frame-wrapper">
-{#                                                <img src="{% static "img/projects/generic/project-1.jpg" %}" class="img-fluid" alt="">#}
-                                                <img src="{{ project.image.url }}" class="img-fluid" alt="{{ project.title }}">
+                                                {% if project.image.url != '' %}
+                                                    <img src="{{ project.image.url }}" class="img-fluid" alt="{{ project.title }}">
+                                                {% else %}
+                                                    <img src="{% static "img/projects/generic/project-1.jpg" %}" class="img-fluid" alt="">
+                                                {% endif %}
                                                 <span class="image-frame-inner-border"></span>
                                                 <span class="image-frame-action">
                                                     <span class="image-frame-action-icon">
