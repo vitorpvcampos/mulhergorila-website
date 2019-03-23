@@ -75,15 +75,17 @@
                                             </li>
                                         </ul>
                                     </li>
-                                    <li>
+                                    <li class="dropdown">
                                         <a class="{% if request.resolver_match.url_name == 'portfolio' %}active{% endif %}" href="{% url 'portfolio' %}">
                                             Portfolio
                                         </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            Cases de Sucesso
-                                        </a>
+                                        <ul class="dropdown-menu">
+                                            <li>
+                                                <a href="#">
+                                                    Cases de Sucesso
+                                                </a>
+                                            </li>
+                                        </ul>
                                     </li>
                                     <li>
                                         <a href="#">
