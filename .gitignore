@@ -105,3 +105,6 @@ venv.bak/
 
 # StaticFiles Local
 staticfiles/
+
+# Postgres
+.pgdata
