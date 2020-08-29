@@ -67,10 +67,13 @@ Contributors
 Contributions
 ====
 Contributions are more then welcome. Keep them coming!
-Please make sure you have read our [guide line](/CONTRIBUTING.md).
+Please make sure you have read our [guide line][].
 
 License
 ====
 You're free to use the web-font in a template/theme intended for sale on marketplaces like Themeforest.
 
 CSS, SCSS & LESS files are under [MIT License](/LICENSE.md).
+
+
+[]: /CONTRIBUTING.md

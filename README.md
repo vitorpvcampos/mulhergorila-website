@@ -5,8 +5,8 @@
 [![Updates](https://pyup.io/repos/github/tiagocordeiro/mulhergorila-website/shield.svg)](https://pyup.io/repos/github/tiagocordeiro/mulhergorila-website/)
 [![Python 3](https://pyup.io/repos/github/tiagocordeiro/mulhergorila-website/python-3-shield.svg)](https://pyup.io/repos/github/tiagocordeiro/mulhergorila-website/)
 [![codecov](https://codecov.io/gh/tiagocordeiro/mulhergorila-website/branch/master/graph/badge.svg)](https://codecov.io/gh/tiagocordeiro/mulhergorila-website)
-[![Python 3.8.1](https://img.shields.io/badge/python-3.8.1-blue.svg)](https://www.python.org/downloads/release/python-381/)
-[![Django 2.2.9](https://img.shields.io/badge/django-2.2.9-blue.svg)](https://www.djangoproject.com/download/)
+[![Python 3.8.5](https://img.shields.io/badge/python-3.8.5-blue.svg)](https://www.python.org/downloads/release/python-381/)
+[![Django 3.1](https://img.shields.io/badge/django-3.1-blue.svg)](https://www.djangoproject.com/download/)
 [![GitHub](https://img.shields.io/github/license/mashape/apistatus.svg)](https://github.com/tiagocordeiro/mulhergorila-website/blob/master/LICENSE)
 
 
