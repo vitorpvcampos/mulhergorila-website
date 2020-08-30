@@ -42,7 +42,7 @@ coverage hmtl
 ```
 para relatório de cobertura de testes.
 
-#### Code style and PEP8 Tests
+#### Code style e verificação da PEP8
 ```
 pycodestyle .
 flake8 .
