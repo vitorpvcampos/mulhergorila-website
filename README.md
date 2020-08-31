@@ -12,11 +12,12 @@
 
 ### Como rodar o projeto?
 
-* Clone esse repositório.
-* Crie um virtualenv com Python 3.
-* Ative o virtualenv.
-* Instale as dependências.
-* Rode as migrações.
+* Clone este repositório
+* Crie um virtualenv com Python 3
+* Ative o ambiente virtual
+* Instale as dependências
+* Gere o .env
+* Rode as migrações
 
 ```
 git clone https://github.com/tiagocordeiro/mulhergorila-website.git
