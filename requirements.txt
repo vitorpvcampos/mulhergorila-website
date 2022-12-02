@@ -13,7 +13,7 @@ urllib3==1.25.10
 whitenoise==5.2.0
 
 # Cloudinary
-chardet==3.0.4
+chardet==5.1.0
 cloudinary==1.22.0
 dj3-cloudinary-storage==0.0.3
 idna==2.10
