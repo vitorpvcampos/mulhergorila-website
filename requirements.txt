@@ -9,7 +9,7 @@ psycopg2-binary==2.8.6
 python-decouple==3.3
 pytz==2020.1
 sentry-sdk==0.18.0
-urllib3==1.25.10
+urllib3==2.0.1
 whitenoise==5.2.0
 
 # Cloudinary
